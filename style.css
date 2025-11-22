@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #c9d1d9;
+}
+
+/* Hero section specific styles */
+.hero-bg {
+  background: radial-gradient(circle at top, #1f2937 0%, #020617 55%, #020617);
+}
+
+/* Glowing gradient ring around profile image */
+.glowing-border {
+  background: conic-gradient(
+    from 0deg,
+    #22d3ee,
+    #6366f1,
+    #a855f7,
+    #ec4899,
+    #facc15,
+    #22d3ee
+  );
+}
+
+.skill-card {
+  text-align: center;
+  background: #1f2933;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: #243447;
+}
+.skill-card h3 {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #30363d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0d1117;
+}
+
+/* Extra small tweaks for mobile */
+@media (max-width: 640px) {
+  .hero-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Tablet layout tweaks */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .hero-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* Large desktop – keep content centered & readable */
+@media (min-width: 1280px) {
+  main,
+  section,
+  header,
+  footer {
+    scroll-margin-top: 80px;
+  }
+}

@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasrin Fatema Sarna | MERN Stack Developer</title>
+
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body class="overflow-x-hidden bg-[#0f2d56]" id="home">
+    <!-- Header/Navigation -->
+    <header
+      class="sticky top-0 z-50 bg-[#0d1117]/80 backdrop-blur-lg shadow-lg px-[5%] py-[10px]"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+    >
+      <nav
+        class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"
+      >
+        <a href="#home" class="text-xl sm:text-2xl font-bold text-white">
+          Nasrin Fatema <span class="text-[#58a6ff]">Sarna</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div
+          class="hidden md:flex space-x-6 text-gray-300 text-sm lg:text-base"
+        >
+          <a href="#about" class="hover:text-white transition duration-300"
+            >About</a
+          >
+          <a href="#skills" class="hover:text-white transition duration-300"
+            >Skills</a
+          >
+          <a href="#projects" class="hover:text-white transition duration-300"
+            >Work experience</a
+          >
+          <a href="#contact" class="hover:text-white transition duration-300"
+            >Contact</a
+          >
+          <a href="#services" class="hover:text-white transition duration-300"
+            >Service</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="md:hidden text-gray-300 hover:text-white transition duration-300"
+          id="menu-button"
+          aria-label="Open navigation menu"
+        >
+          <ion-icon name="menu-outline" class="h-7 w-7"></ion-icon>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Navigation Menu (FULL SCREEN OVERLAY) -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 h-full w-full bg-gray-900 transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden"
+    >
+      <div class="p-8 h-full flex flex-col">
+        <div class="flex justify-end mb-8">
+          <button
+            id="close-button"
+            class="text-white hover:text-gray-300 focus:outline-none"
+            aria-label="Close navigation menu"
+          >
+            <ion-icon name="close-outline" class="w-7 h-7"></ion-icon>
+          </button>
+        </div>
+        <ul
+          class="text-2xl text-white font-medium space-y-6 text-center mt-4"
+          id="mobileNav"
+        >
+          <li>
+            <a
+              href="#home"
+              class="mobile-link block hover:text-indigo-400 transition-colors duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="mobile-link block hover:text-indigo-400 transition-colors duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="mobile-link block hover:text-indigo-400 transition-colors duration-300"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="mobile-link block hover:text-indigo-400 transition-colors duration-300"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="mobile-link block hover:text-indigo-400 transition-colors duration-300"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="mobile-link block hover:text-indigo-400 transition-colors duration-300"
+              >Services</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="hero-bg hero-section flex items-center justify-center text-center py-16 sm:py-20 md:py-24 lg:py-28 min-h-[70vh]"
+      id="hero"
+    >
+      <div class="max-w-4xl mx-auto px-4">
+        <div
+          class="mb-8 w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[230px] md:h-[230px] rounded-full p-[5px] mx-auto overflow-hidden glowing-border"
+          data-aos="fade-right"
+          data-aos-duration="2000"
+        >
+          <img
+            src="./images/hero img.jpg"
+            class="w-full h-full rounded-full object-cover"
+            alt="Profile photo"
+          />
+        </div>
+        <div data-aos="fade-left" data-aos-duration="2000">
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight mb-4"
+          >
+            Hi, I'm <span class="text-[#58a6ff]">Nasrin Fatema Sarna</span>.
+          </h1>
+          <p
+            class="text-xs sm:text-sm md:text-base lg:text-lg text-[#a0aec0] font-medium"
+          >
+            MERN Stack Developer • MongoDB • Express • React • Node.js
+          </p>
+          <p
+            class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 my-6 animation-delay-300"
+          >
+            I build modern, scalable and responsive
+            <span class="font-semibold">full-stack web applications</span> using
+            the MERN stack – from clean REST APIs to polished UI.
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center sm:justify-center">
+            <a
+              href="#projects"
+              class="bg-[#58a6ff] hover:bg-[#4895e6] text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 shadow-lg animation-delay-600 inline-block"
+            >
+              View My Work
+            </a>
+            <a
+              href="./images/nasrin Fatema Sarna CV.pdf"
+              class="bg-[#58a6ff] hover:bg-[#4895e6] text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 shadow-lg animation-delay-600 inline-block"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 sm:py-24 max-w-7xl mx-auto">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="text-3xl sm:text-4xl font-bold text-center mb-16 text-white"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          About <span class="text-[#58a6ff]">Me</span>
+        </h2>
+        <div
+          class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-16"
+        >
+          <div
+            class="flex-shrink-0 w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden border-4 border-[#30363d] shadow-lg hover:scale-105 transition"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <img
+              src="./images/img2_n.jpg"
+              alt="Nasrin Fatema Sarna"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="text-center md:text-left"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="500"
+          >
+            <p class="text-gray-300 text-base sm:text-lg mb-4 max-w-4xl">
+              I am a <span class="font-semibold">MERN Stack Developer</span>
+              with a strong foundation in MongoDB, Express, React and Node.js. I
+              love turning ideas into real-world applications with clean
+              architecture and reusable components.
+            </p>
+            <p class="text-gray-300 text-base sm:text-lg max-w-4xl">
+              From building secure REST APIs to designing responsive user
+              interfaces, I focus on performance, code quality and a great user
+              experience across all devices.
+            </p>
+            <div class="mt-10 text-3xl space-x-4 text-white">
+              <a
+                href="https://www.facebook.com/sarnali.nila"
+                class="transition duration-300 hover:text-[#58a6ff]"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+              <a
+                href="https://github.com/NasrinFatemaSarna"
+                class="transition duration-300 hover:text-[#58a6ff]"
+                ><ion-icon name="logo-github"></ion-icon
+              ></a>
+              <a
+                href="https://www.instagram.com/sarna_3333/"
+                class="transition duration-300 hover:text-[#58a6ff]"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/nasrinfatema/"
+                class="transition duration-300 hover:text-[#58a6ff]"
+                ><ion-icon name="logo-linkedin"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill section start -->
+    <section id="skills" class="py-20 sm:py-28 bg-[#0b1120]">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <h2
+          class="text-3xl sm:text-4xl font-bold text-center mb-14 text-white"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          My <span class="text-[#58a6ff]">Skills</span>
+        </h2>
+
+        <!-- Toggle Buttons -->
+        <div
+          class="flex flex-wrap justify-center gap-4 sm:gap-6 mb-16"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
+          <button
+            onclick="showSkills('frontend')"
+            id="btn-frontend"
+            class="px-7 py-3.5 font-semibold rounded-full bg-[#58a6ff] hover:bg-[#4895e6] text-white transition shadow-lg shadow-[#58a6ff]/40 hover:shadow-xl hover:shadow-[#58a6ff]/60"
+          >
+            Frontend
+          </button>
+
+          <button
+            onclick="showSkills('backend')"
+            id="btn-backend"
+            class="px-7 py-3.5 font-semibold rounded-full bg-white/10 hover:bg-white/20 text-white transition shadow-lg shadow-black/40 hover:shadow-xl"
+          >
+            Backend
+          </button>
+        </div>
+
+        <!-- FRONTEND SKILLS -->
+        <div
+          id="frontend"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-10"
+        >
+          <!-- HTML -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            <img
+              src="./images/html.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="HTML5"
+            />
+            <h3 class="text-lg font-semibold text-white">HTML5</h3>
+          </div>
+
+          <!-- CSS -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="100"
+          >
+            <img
+              src="./images/css-3.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="CSS3"
+            />
+            <h3 class="text-lg font-semibold text-white">CSS3</h3>
+          </div>
+
+          <!-- BOOTSTRAP -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="100"
+          >
+            <img
+              src="./images/bootstrap.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="Bootstrap"
+            />
+            <h3 class="text-lg font-semibold text-white">BOOTSTRAP</h3>
+          </div>
+
+          <!-- JavaScript -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
+            <img
+              src="./images/javascriptes6.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="JavaScript"
+            />
+            <h3 class="text-lg font-semibold text-white">JavaScript (ES6+)</h3>
+          </div>
+
+          <!-- Tailwind CSS -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            <img
+              src="./images/tailwind css.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="Tailwind CSS"
+            />
+            <h3 class="text-lg font-semibold text-white">Tailwind CSS</h3>
+          </div>
+
+          <!-- React.js -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="350"
+          >
+            <img
+              src="./images/react.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="React.js"
+            />
+            <h3 class="text-lg font-semibold text-white">React.js</h3>
+          </div>
+
+          <!-- Next.js -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          >
+            <img
+              src="./images/nextjs.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="Next.js"
+            />
+            <h3 class="text-lg font-semibold text-white">Next.js</h3>
+          </div>
+
+          <!-- Redux -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="500"
+          >
+            <img
+              src="./images/redux.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="Redux"
+            />
+            <h3 class="text-lg font-semibold text-white">Redux / RTK</h3>
+          </div>
+
+          <!-- Firebase -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="600"
+          >
+            <img
+              src="./images/firebase.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="Firebase"
+            />
+            <h3 class="text-lg font-semibold text-white">Firebase</h3>
+          </div>
+
+          <!-- Framer motion -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="600"
+          >
+            <img
+              src="./images/framermotion.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="Framer Motion"
+            />
+            <h3 class="text-lg font-semibold text-white">Framer Motion</h3>
+          </div>
+
+          <!-- Git & GitHub -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="700"
+          >
+            <img
+              src="./images/git.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="Git"
+            />
+            <h3 class="text-lg font-semibold text-white">Git & GitHub</h3>
+          </div>
+        </div>
+
+        <!-- BACKEND SKILLS -->
+        <div
+          id="backend"
+          class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-10"
+        >
+          <!-- MongoDB -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+          >
+            <img
+              src="./images/mongodb.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="MongoDB"
+            />
+            <h3 class="text-lg font-semibold text-white">MongoDB</h3>
+          </div>
+
+          <!-- Mongoose -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+          >
+            <img
+              src="./images/mongoose.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="Mongoose"
+            />
+            <h3 class="text-lg font-semibold text-white">Mongoose</h3>
+          </div>
+
+          <!-- MySQL -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+          >
+            <img
+              src="./images/mysql.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="MySQL"
+            />
+            <h3 class="text-lg font-semibold text-white">MySQL</h3>
+          </div>
+
+          <!-- REST API -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+          >
+            <img
+              src="./images/api.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="REST API"
+            />
+            <h3 class="text-lg font-semibold text-white">REST API</h3>
+          </div>
+
+          <!-- JWT Auth -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+          >
+            <img
+              src="./images/jwt.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="JWT Auth"
+            />
+            <h3 class="text-lg font-semibold text-white">JWT Auth</h3>
+          </div>
+
+          <!-- Postman -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+          >
+            <img
+              src="./images/postman.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="Postman"
+            />
+            <h3 class="text-lg font-semibold text-white">Postman</h3>
+          </div>
+
+          <!-- Node.js -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+          >
+            <img
+              src="./images/nodejs.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="Node.js"
+            />
+            <h3 class="text-lg font-semibold text-white">Node.js</h3>
+          </div>
+
+          <!-- Express.js -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+          >
+            <img
+              src="./images/express.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="Express.js"
+            />
+            <h3 class="text-lg font-semibold text-white">Express.js</h3>
+          </div>
+
+          <!-- Vercel / Netlify -->
+          <div
+            class="skill-card p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 hover:scale-[1.03] transition-transform transition-shadow duration-300 cursor-pointer"
+          >
+            <img
+              src="./images/cloud.png"
+              class="w-20 sm:w-24 mx-auto mb-4"
+              alt="Vercel / Netlify"
+            />
+            <h3 class="text-lg font-semibold text-white">Vercel / Netlify</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 sm:py-24">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <h2
+          class="text-3xl sm:text-4xl font-bold text-center mb-16 text-white"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          My <span class="text-[#58a6ff]">Projects</span>
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div
+            class="project-card bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.7)]"
+            data-aos="flip-left"
+            data-aos-duration="2000"
+          >
+            <img
+              src="./images/portfolio-1.webp"
+              alt="Full Stack Agency Website"
+              class="w-full h-auto object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2">
+                Full Stack Agency Website
+              </h3>
+              <p class="text-gray-300 mb-4">
+                MERN based agency website with authentication, dashboard
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-[#58a6ff] text-white font-bold py-2 px-4 rounded-full text-sm hover:bg-[#4895e6] transition duration-300"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div
+            class="project-card bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.7)]"
+            data-aos="flip-right"
+            data-aos-duration="2000"
+          >
+            <img
+              src="./images/portfolio-2.webp"
+              alt="Data-Driven Analytics App"
+              class="w-full h-auto object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2">
+                Data-Driven Analytics App
+              </h3>
+              <p class="text-gray-300 mb-4">
+                Analytics dashboard with secure REST API, charts and real-time
+                data updates.
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-[#58a6ff] text-white font-bold py-2 px-4 rounded-full text-sm hover:bg-[#4895e6] transition duration-300"
+                >View Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div
+            class="project-card bg-white/5 border border-white/10 rounded-2xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.7)]"
+            data-aos="flip-left"
+            data-aos-duration="2000"
+          >
+            <img
+              src="./images/portfolio-3.webp"
+              alt="Full Stack Blog Application"
+              class="w-full h-auto object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-2">
+                Full Stack Blog Application
+              </h3>
+              <p class="text-gray-300 mb-4">
+                Blog platform with JWT authentication, CRUD operations and admin
+                panel.
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-[#58a6ff] text-white font-bold py-2 px-4 rounded-full text-sm hover:bg-[#4895e6] transition duration-300"
+                >View Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section
+      id="services"
+      class="py-20 sm:py-24 bg-[#020617]"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <!-- Heading -->
+        <div class="text-center mb-14 max-w-2xl mx-auto">
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+            My <span class="text-[#58a6ff]">Services</span>
+          </h2>
+          <p class="text-gray-400 text-sm sm:text-base">
+            I help brands and businesses build modern, fast and scalable web
+            experiences using the MERN stack and modern frontend tools.
+          </p>
+        </div>
+
+        <!-- Service Cards -->
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Service 1 -->
+          <div
+            class="group p-7 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 transition duration-300"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-[#0b1120] flex items-center justify-center mb-5 group-hover:bg-[#58a6ff] transition"
+            >
+              <ion-icon
+                name="code-slash-outline"
+                class="text-[#58a6ff] group-hover:text-white text-2xl"
+              ></ion-icon>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">
+              MERN Stack Web Apps
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Full-stack web applications using MongoDB, Express, React, and
+              Node.js – from idea to deployment.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="group p-7 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 transition duration-300"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="100"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-[#0b1120] flex items-center justify-center mb-5 group-hover:bg-[#58a6ff] transition"
+            >
+              <ion-icon
+                name="phone-portrait-outline"
+                class="text-[#58a6ff] group-hover:text-white text-2xl"
+              ></ion-icon>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">
+              Frontend & UI Development
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Pixel-perfect, responsive interfaces with React, Next.js, Tailwind
+              CSS and modern animation libraries.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="group p-7 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 transition duration-300"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-[#0b1120] flex items-center justify-center mb-5 group-hover:bg-[#58a6ff] transition"
+            >
+              <ion-icon
+                name="server-outline"
+                class="text-[#58a6ff] group-hover:text-white text-2xl"
+              ></ion-icon>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">
+              Backend & REST APIs
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Secure, scalable APIs with Node.js, Express, JWT auth, MongoDB /
+              MySQL and Postman-tested endpoints.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="group p-7 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 transition duration-300"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-[#0b1120] flex items-center justify-center mb-5 group-hover:bg-[#58a6ff] transition"
+            >
+              <ion-icon
+                name="color-palette-outline"
+                class="text-[#58a6ff] group-hover:text-white text-2xl"
+              ></ion-icon>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">
+              UI/UX & Responsive Design
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Clean, modern layouts that look perfect on mobile, tablet and
+              desktop with focus on usability.
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div
+            class="group p-7 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 transition duration-300"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="400"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-[#0b1120] flex items-center justify-center mb-5 group-hover:bg-[#58a6ff] transition"
+            >
+              <ion-icon
+                name="speedometer-outline"
+                class="text-[#58a6ff] group-hover:text-white text-2xl"
+              ></ion-icon>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">
+              Performance Optimization
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Faster load times, Core Web Vitals improvements, image & bundle
+              optimization for better UX and SEO.
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div
+            class="group p-7 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl text-center md:text-left shadow-[0_10px_40px_rgba(0,0,0,0.7)] hover:shadow-[0_15px_60px_rgba(88,166,255,0.7)] hover:-translate-y-2 transition duration-300"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="500"
+          >
+            <div
+              class="w-12 h-12 rounded-xl bg-[#0b1120] flex items-center justify-center mb-5 group-hover:bg-[#58a6ff] transition"
+            >
+              <ion-icon
+                name="cloud-upload-outline"
+                class="text-[#58a6ff] group-hover:text-white text-2xl"
+              ></ion-icon>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-3">
+              Deployment & Maintenance
+            </h3>
+            <p class="text-gray-400 text-sm">
+              Deployment on Vercel / Netlify and ongoing support for bug fixes,
+              improvements and new features.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section start -->
+    <section
+      class="container mx-auto p-4 sm:p-8 md:p-12 lg:p-16 max-w-7xl"
+      id="contact"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden md:flex">
+        <!-- Left Info -->
+        <div
+          class="md:w-1/2 bg-gray-900 text-white p-8 sm:p-10 md:p-12 flex flex-col justify-between"
+        >
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+              Contact Information
+            </h2>
+            <p class="text-gray-300 mb-8">
+              If you have a project idea, collaboration request, or just want to
+              say hi, feel free to reach out.
+            </p>
+
+            <!-- Contact Details -->
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <ion-icon
+                  name="call-outline"
+                  class="w-6 h-6 text-gray-400"
+                ></ion-icon>
+                <span class="text-lg">+88 01704503333</span>
+              </div>
+
+              <div class="flex items-center space-x-4">
+                <ion-icon
+                  name="mail-outline"
+                  class="w-6 h-6 text-gray-400"
+                ></ion-icon>
+                <span class="text-lg">nasrinfatemasarna@gmail.com</span>
+              </div>
+
+              <div class="flex items-start space-x-4">
+                <ion-icon
+                  name="location-outline"
+                  class="w-8 h-8 text-gray-400 mt-1"
+                ></ion-icon>
+                <span class="text-lg leading-relaxed">
+                  Uttara, Dhaka, Bangladesh <br />
+                  <span class="text-sm text-gray-400">
+                    Available for freelance & remote MERN stack projects.
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="w-full h-48 mt-8">
+              <iframe
+                class="w-full h-full rounded-xl border-0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Uttara,%20Dhaka,%20Bangladesh&amp;z=14&amp;output=embed"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="flex justify-center md:justify-start space-x-6 mt-8">
+            <a
+              href="https://www.facebook.com/sarnali.nila"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <ion-icon name="logo-facebook" class="w-8 h-8"></ion-icon>
+            </a>
+            <a
+              href="https://www.instagram.com/sarna_3333/"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <ion-icon name="logo-instagram" class="w-8 h-8"></ion-icon>
+            </a>
+            <a
+              href="https://github.com/NasrinFatemaSarna"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <ion-icon name="logo-github" class="w-8 h-8"></ion-icon>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nasrinfatema/"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <ion-icon name="logo-linkedin" class="w-8 h-8"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Form -->
+        <div class="md:w-1/2 p-8 sm:p-10 md:p-12">
+          <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">
+            Send me a message
+          </h2>
+
+          <form class="space-y-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Name</label
+              >
+              <input
+                type="text"
+                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                placeholder="Your Name"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                placeholder="your.email@example.com"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700"
+                >Message</label
+              >
+              <textarea
+                rows="5"
+                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                placeholder="Your message..."
+              ></textarea>
+            </div>
+
+            <div class="flex justify-end">
+              <button
+                type="submit"
+                class="w-full sm:w-auto px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md shadow-md hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 transform hover:scale-105 transition"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- Footer start-->
+    <footer class="w-full bg-gray-900 text-gray-300 py-4">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 space-y-3 md:space-y-0 text-sm"
+      >
+        <!-- Logo -->
+        <div>
+          <span class="text-2xl font-semibold text-white">
+            Nasrin Fatema <span class="text-[#58a6ff]">Sarna</span>.
+          </span>
+        </div>
+
+        <!-- Center text -->
+        <div class="text-center leading-snug">
+          <div>&copy; 2025 Nasrin Fatema Sarna. All rights reserved.</div>
+      </div>
+
+        <!-- Links -->
+        <div class="flex space-x-6">
+          <a href="#home" class="hover:text-white">Home</a>
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#skills" class="hover:text-white">Skills</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS + Custom JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
